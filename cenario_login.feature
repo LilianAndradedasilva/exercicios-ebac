@@ -6,13 +6,11 @@
             Dado Informe usuário e senha
 
             Cenário: Login e senha válidos
-            Quando Informar um login válido
-            E  Informar uma senha válida
+            Quando Informar um login e senha válido
             Então Informar a mensagem "Olá,seja bem vindo" e direcionar para a pagina de pedidos
 
             Cenario: Login ou senha inválidos
-            Quando Informar um login valido
-            E      Informar uma senha inválida
+            Quando Informar um login ou senha inválidos
             Então Informar a mensagem "Usuário ou senha inválidos"
             
 
