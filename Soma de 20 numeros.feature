@@ -8,12 +8,11 @@
 
             Esquema do Cenário: Somar Numero1 + Numero2
             Dado que eu acesse a calculadora
-            Quando  eu informar o <Numero1>
-            E   o <Numero2>
-            Entao   deve somar <Numero1> + <Numero2> e exibir a mensagem "O resultado da soma é <Soma>"
+            Quando  eu somar o <Numero1> e o <Numero2>
+            Entao   deve realizar a soma e exibir a mensagem "O resultado da soma é <Resultado>"
 
             Dados:
-            Numero1   Numero2   Soma
+            Numero1   Numero2   Resultado
             | <1>  |  | <1> |  | <2>  |
             | <2>  |  | <1> |  | <3>  |
             | <3>  |  | <1> |  | <4>  |
