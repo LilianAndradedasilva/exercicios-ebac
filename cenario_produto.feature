@@ -10,20 +10,15 @@
             Quando eu selecionar o tamanho, a cor e a quantidade
             Então deve informar "Produto adicionado ao carrinho"
 
-            Cenário: Quantidade Inválida
-            Quando  a quantidade comprada ultrapassar 10 peças
-            Então  deve mostrar a mensagem "Limite de compras: Máximo 10 produtos por compra"
+            Cenário: Seleções Inválidas
+            Quando  eu selecionar a <cor>, <tamanho> ou <quantidade> invalidas ou indisponível
+            Então  deve mostrar a mensagem "Seleção inválida ou indisponivel, verifique as opções disponíveis"
 
-            Cenário: Cor inválida
-            Quando eu selecionar uma cor não disponível
-            Então  Informe "Esta cor não está disponível"
+            | cor   | tamanho | quantidade |
+            | Preto | XXL     | 11         |
 
-            Cenário: Tamanho inválido
-            Quando selecionar o tamanho selecionado estiver indisponível
-            Então Informe "Este tamanho não está disponível"
-
-            Cenário: Botão Limpar
-            Quando clicar no botão Limpar
-            Então  Todos os dados informados pelo usuário devem ser apagados
+Cenário: Botão Limpar
+Quando clicar no botão Limpar
+Então  Todos os dados informados pelo usuário devem ser apagados
 
 
